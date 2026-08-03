@@ -9,13 +9,13 @@ const CounterScoreboard = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center text-center">
-      <div className="m-2.5 min-h-[400px] w-[800px] border-2 rounded-2xl p-2 text-3xl">
+      <div className="m-2.5 min-h-[400px] w-[800px]  border-2 rounded-2xl p-2 text-3xl">
 
         <h1 className="border-2 w-12 p-2 text-center mx-auto ">
           {count}
         </h1>
 
-        <div className="mt-5">
+        <div className="mt-5 flex justify-center gap-3 ">
           <button className=" bg-green-600 border rounded-2xl p-3" onClick={increase}>
             Increase (+)
           </button>
