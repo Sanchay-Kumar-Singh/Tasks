@@ -15,7 +15,9 @@ const LiveSearch = () => {
   const [category, setCategory] = useState("All");
 
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase());
+    const matchesSearch = product.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
 
     const matchesCategory =
       category === "All" || product.category === category;
